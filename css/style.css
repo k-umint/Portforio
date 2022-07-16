@@ -1,8 +1,36 @@
-body h2 {
-  padding-left: 15px;
+body div#main {
+  background-color: #F0F4F4;
 }
 
-body a#mail {
+body div#main div#offcanvasExample {
+  background-color: #212529;
+}
+
+body div#main div#offcanvasExample div.offcanvas-header h5 {
+  color: aliceblue;
+}
+
+body div#main h2 {
+  padding-left: 15px;
+  text-align: center;
+}
+
+body div#main div.works div.sites {
+  text-align: center;
+}
+
+body div#main div.works div.sites a img {
+  width: 60%;
+}
+
+body div#main div.works div.sites h5 {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: end;
+}
+
+body div#main a#mail {
   display: block;
   width: 150px;
   height: 50px;

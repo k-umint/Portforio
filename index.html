@@ -4,8 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Portfolio | Welcome</title>
+
+    <!-- Foundation Framework -->
+    <!-- https://get.foundation/sites/docs/ -->
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNZRMHKHCP"></script>
@@ -23,94 +31,125 @@
 
 <body>
 
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div id="main">
 
-            <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-                <div class="row column">
-                    <br>
-                    <!-- <img class="thumbnail" src="https://placehold.it/550x350"> -->
-                    <img class="thumbnail" src="img/2020-07-31_00-22-32_984.jpeg">
-                    <h5>Kaito Suehiro</h5>
-                    <p>
-                        Age : 25<br> Date of Birth : 1996 / 6 / 15<br> Location : Kanagawa<br>
-                    </p>
-                </div>
+
+
+        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          Link with href
+        </a> -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Information
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> -->
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-column text-white bg-dark" style="width: 100%;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                        <span class="fs-4">Profile</span>
+                    </a>
+                    <hr>
 
-            <div class="off-canvas-content" data-off-canvas-content>
-                <div class="title-bar hide-for-large">
-                    <div class="title-bar-left">
-                        <button class="menu-icon" type="button" data-open="my-info"></button>
-                        <span class="title-bar-title">Kaito Suehiro</span>
-                    </div>
-                </div>
-                <div class="callout primary">
-                    <div class="row column">
-                        <h1>Hello! <br>This is the portfolio of <br>Kaito Suehiro.</h1>
-                        <p class="lead"></p>
-                    </div>
-                </div>
-                <h2 class="row">Works</h2>
-                <div class="row small-up-2 medium-up-3 large-up-4">
-                    <div class="column">
-                        <h5>Funny Sites</h5>
-                        <a href="https://k-umint.github.io/funny_site/" target="_blank">
-                            <img class="thumbnail" src="img/funnysite.png">
-                        </a>
-                    </div>
-                    <div class="column">
-                        <h5>難読漢字タイムアタック</h5>
-                        <a href="https://k-umint.github.io/kanjiquiz/" target="_blank">
-                            <img class="thumbnail" src="img/kanjiquiz.png">
-                        </a>
-                    </div>
-                    <div class="column">
-                        <h5>新型コロナウイルス全国情報</h5>
-                        <a href="https://covid19-info-jp.herokuapp.com/" target="_blank">
-                            <img class="thumbnail" src="img/covid-19_info_img.png">
-                        </a>
-                    </div>
-                    <div class="column">
-                        <h5>Batting Results</h5>
-                        <a href="https://batting-results.herokuapp.com/" target="_blank">
-                            <img class="thumbnail" src="img/battingResult.png">
-                        </a>
-                    </div>
-                </div>
 
-                <hr>
+                    <div id="profile">
+                        <br>
+                        <img class="thumbnail" src="img/2020-07-31_00-22-32_984.jpeg" width="60%s">
+                        <h5>Kaito Suehiro</h5>
+                        <p>
+                            Age : 26<br> Date of Birth : 1996 / 6 / 15<br> Location : Kanagawa<br>
+                        </p>
+                    </div>
 
-                <div class="row">
-                    <div class="medium-3 columns">
+                    <div class="contact">
                         <h3>Contact Me</h3>
                         <p></p>
-                        <!-- <ul class="menu">
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Yo</a></li>
-            </ul> -->
                     </div>
-                    <div class="medium-9 columns">
-                        <!-- <label>Name
-              <input type="text" placeholder="Name">
-            </label>
-            <label>Email
-              <input type="text" placeholder="Email">
-            </label>
-            <label>
-              Message
-              <textarea placeholder="Message"></textarea>
-            </label>
-            <input type="submit" class="button expanded" value="Send!"> -->
+                    <div class="mail">
                         <a id="mail" href="mailto:sakura19suka96+fromprofile@gmail.com" class="submit success button">
-              send e-mail
-            </a>
+                        send e-mail
+                      </a>
                     </div>
+
+
+                    <!-- <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg> Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg> Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg> Customers
+                            </a>
+                        </li>
+                    </ul> -->
+                    <hr>
                 </div>
+
+                <!-- <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div> -->
             </div>
         </div>
+
+        <h2>Works</h2>
+        <div class="works">
+            <div class="sites">
+                <h5>Funny Sites</h5>
+                <a href="https://k-umint.github.io/funny_site/" target="_blank">
+                    <img class="thumbnail shadow-lg" src="img/funnysite.png">
+                </a>
+            </div>
+            <div class="sites">
+                <h5>難読漢字タイムアタック</h5>
+                <a href="https://k-umint.github.io/kanjiquiz/" target="_blank">
+                    <img class="thumbnail shadow-lg" src="img/kanjiquiz.png">
+                </a>
+            </div>
+            <div class="sites">
+                <h5>新型コロナウイルス全国情報</h5>
+                <a href="https://covid19-info-jp.herokuapp.com/" target="_blank">
+                    <img class="thumbnail shadow-lg" src="img/covid-19_info_img.png">
+                </a>
+            </div>
+            <div class="sites">
+                <h5>Batting Results</h5>
+                <a href="https://batting-results.herokuapp.com/" target="_blank">
+                    <img class="thumbnail shadow-lg" src="img/battingResult.png">
+                </a>
+            </div>
+        </div>
+
+
     </div>
+
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
