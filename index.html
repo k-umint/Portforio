@@ -1,23 +1,34 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Welcome</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio | Welcome</title>
 
-    <!-- Foundation Framework -->
-    <!-- https://get.foundation/sites/docs/ -->
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+        <!-- Foundation Framework -->
+        <!-- https://get.foundation/sites/docs/ -->
+        <link rel="stylesheet"
+            href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+        <!-- Bootstrap5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
-    <!-- Bootstrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNZRMHKHCP"></script>
-    <script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/airplane.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-BNZRMHKHCP"></script>
+        <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -27,135 +38,276 @@
 
         gtag('config', 'G-BNZRMHKHCP');
     </script>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div id="main">
-
-
-
-        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-          Link with href
-        </a> -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          Information
-        </button>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> -->
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="d-flex flex-column text-white bg-dark" style="width: 100%;">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                        <span class="fs-4">Profile</span>
-                    </a>
-                    <hr>
-
-
-                    <div id="profile">
-                        <br>
-                        <img class="thumbnail" src="img/2020-07-31_00-22-32_984.jpeg" width="60%s">
-                        <h5>Kaito Suehiro</h5>
-                        <p>
-                            Age : 26<br> Date of Birth : 1996 / 6 / 15<br> Location : Kanagawa<br>
-                        </p>
-                    </div>
-
-                    <div class="contact">
-                        <h3>Contact Me</h3>
-                        <p></p>
-                    </div>
-                    <div class="mail">
-                        <a id="mail" href="mailto:sakura19suka96+fromprofile@gmail.com" class="submit success button">
-                        send e-mail
-                      </a>
-                    </div>
-
-
-                    <!-- <ul class="nav nav-pills flex-column mb-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active" aria-current="page">
-                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg> Orders
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg> Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg> Customers
-                            </a>
-                        </li>
-                    </ul> -->
-                    <hr>
-                </div>
-
-                <!-- <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                Dropdown button
-              </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <!-- Header Start -->
+        <header class="site-header">
+            <div class="wrapper site-header__wrapper">
+                <a href="#" class="brand"><img src="img/logo.png" width="80px"
+                        alt=""></a>
+                <nav class="nav">
+                    <button class="nav__toggle" aria-expanded="false"
+                        type="button">
+                        menu
+                    </button>
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#about_site">About</a></li>
+                        <li class="nav__item"><a href="#works">Works</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
                     </ul>
-                </div> -->
+                </nav>
             </div>
-        </div>
+        </header>
+        <!-- Header End -->
 
-        <h2>Works</h2>
-        <div class="works">
-            <div class="sites">
-                <h5>Funny Sites</h5>
-                <a href="https://k-umint.github.io/funny_site/" target="_blank">
-                    <img class="thumbnail shadow-lg" src="img/funnysite.png">
-                </a>
-            </div>
-            <div class="sites">
-                <h5>難読漢字タイムアタック</h5>
-                <a href="https://k-umint.github.io/kanjiquiz/" target="_blank">
-                    <img class="thumbnail shadow-lg" src="img/kanjiquiz.png">
-                </a>
-            </div>
-            <div class="sites">
-                <h5>新型コロナウイルス全国情報</h5>
-                <a href="https://covid19-info-jp.herokuapp.com/" target="_blank">
-                    <img class="thumbnail shadow-lg" src="img/covid-19_info_img.png">
-                </a>
-            </div>
-            <div class="sites">
-                <h5>Batting Results</h5>
-                <a href="https://batting-results.herokuapp.com/" target="_blank">
-                    <img class="thumbnail shadow-lg" src="img/battingResult.png">
-                </a>
-            </div>
-        </div>
+        <div id="main">
+
+            <div id="top_message">
+                <h1>Welcome!</h1>
+                <div class="frame">
+                    <div class="plane-container">
+                        <a href="http://customer.io/" target="_blank">
+                            <svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px"
+                                width="1131.53px" height="379.304px" viewBox="0
+                                0 1131.53 379.304" enable-background="new 0 0
+                                1131.53 379.304"
+                                xml:space="preserve" class="plane">
+                                <polygon fill="#D8D8D8" points="72.008,0
+                                    274.113,140.173 274.113,301.804
+                                    390.796,221.102 601.682,367.302
+                                    1131.53,0.223 "/>
+                                    <polygon fill="#C4C4C3"
+                                        points="1131.53,0.223 274.113,140.173
+                                        274.113,301.804 390.796,221.102 "/>
+                                    </svg></a>
+
+                            </div>
+                        </div>
+                        <div class="clouds">
+
+                            <svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px" width="762px"
+                                height="331px" viewBox="0 0 762 331"
+                                enable-background="new 0 0 762 331"
+                                xml:space="preserve" class="cloud big front
+                                slowest">
+                                <path fill="#FFFFFF"
+                                    d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                </svg>
+                                <svg version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="762px"
+                                    height="331px" viewBox="0 0 762 331"
+                                    enable-background="new 0 0 762 331"
+                                    xml:space="preserve" class="cloud distant
+                                    smaller">
+                                    <path fill="#FFFFFF"
+                                        d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                    </svg>
+
+                                    <svg version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="762px"
+                                        height="331px" viewBox="0 0 762 331"
+                                        enable-background="new 0 0 762 331"
+                                        xml:space="preserve" class="cloud small
+                                        slow">
+                                        <path fill="#FFFFFF"
+                                            d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                            c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                            C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                            S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                        </svg>
+
+                                        <svg version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            x="0px" y="0px" width="762px"
+                                            height="331px" viewBox="0 0 762 331"
+                                            enable-background="new 0 0 762 331"
+                                            xml:space="preserve" class="cloud
+                                            distant super-slow massive">
+                                            <path fill="#FFFFFF"
+                                                d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                                c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                                C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                                S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                            </svg>
+
+                                            <svg version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px" y="0px" width="762px"
+                                                height="331px" viewBox="0 0 762
+                                                331" enable-background="new 0 0
+                                                762 331" xml:space="preserve"
+                                                class="cloud slower">
+                                                <path fill="#FFFFFF"
+                                                    d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                                    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                                    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                                    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                                </svg>
+
+                                            </div>
+                                        </div>
+
+                                        <div id="about_site">
+                                            <h2>What is this site?</h2>
+                                        </div>
+
+                                        <div id="about_me"
+                                            class="container-fluid">
+                                            <h2>About me</h2>
+                                            <div class="row row-cols-2">
+                                                <div id="about_me-col_1"
+                                                    class="col">
+                                                    <img
+                                                        src="img/2020-07-31_00-22-32_984.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <div id="about_me-col_2"
+                                                    class="col">
+                                                    <p>
+                                                        Age : 26<br> Date of
+                                                        Birth : 1996 / 6 / 15<br>
+                                                        Location : Kanagawa<br>
+                                                    </p>
+                                                    <ul>
+                                                        <li>Coding Language :
+                                                            JavaScript, PHP,
+                                                            Java</li>
+                                                        <li>Experience :
+                                                            Detailed Design,
+                                                            Development, Test</li>
+                                                    </ul>
+                                                    <a
+                                                        href="https://twitter.com/"><img
+                                                            src="img/icons8-twitter-480.png"
+                                                            width="50px" alt=""></a>
+                                                    <a
+                                                        href="https://github.com/k-umint"><img
+                                                            src="img/icons8-github-512.png"
+                                                            width="50px" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="works" class="works
+                                            container-fluid">
+                                            <h2>My Works</h2>
+                                            <div class="row row-cols-2">
+                                                <div class="sites col">
+                                                    <h5>Funny Sites</h5>
+                                                    <a
+                                                        href="https://k-umint.github.io/funny_site/"
+                                                        target="_blank">
+                                                        <img class="thumbnail
+                                                            shadow-lg"
+                                                            src="img/funnysite.png">
+                                                    </a>
+                                                </div>
+                                                <div class="sites col">
+                                                    <h5>難読漢字タイムアタック</h5>
+                                                    <a
+                                                        href="https://k-umint.github.io/kanjiquiz/"
+                                                        target="_blank">
+                                                        <img class="thumbnail
+                                                            shadow-lg"
+                                                            src="img/kanjiquiz.png">
+                                                    </a>
+                                                </div>
+                                                <div class="sites col">
+                                                    <h5>新型コロナウイルス全国情報</h5>
+                                                    <a
+                                                        href="https://covid19-info-jp.herokuapp.com/"
+                                                        target="_blank">
+                                                        <img class="thumbnail
+                                                            shadow-lg"
+                                                            src="img/covid-19_info_img.png">
+                                                    </a>
+                                                </div>
+                                                <div class="sites col">
+                                                    <h5>Batting Results</h5>
+                                                    <a
+                                                        href="https://batting-results.herokuapp.com/"
+                                                        target="_blank">
+                                                        <img class="thumbnail
+                                                            shadow-lg"
+                                                            src="img/battingResult.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-    </div>
 
+                                        <div id="contact">
+                                            <h2>Contact</h2>
+                                            <div class="Form">
+                                                <div class="Form-Item">
+                                                    <p class="Form-Item-Label">お名前</p>
+                                                    <input type="text"
+                                                        class="Form-Item-Input"
+                                                        placeholder="例）山田太郎">
+                                                </div>
+                                                <!-- <div class="Form-Item">
+                                                    <p class="Form-Item-Label"></span>電話番号</p>
+                                                <input type="text"
+                                                    class="Form-Item-Input"
+                                                    placeholder="例）000-0000-0000">
+                                            </div> -->
+                                                <div class="Form-Item">
+                                                    <p class="Form-Item-Label"></span>メールアドレス</p>
+                                                <input type="email"
+                                                    class="Form-Item-Input"
+                                                    placeholder="例）example@gmail.com">
+                                            </div>
+                                            <div class="Form-Item">
+                                                <p class="Form-Item-Label
+                                                    isMsg"></span>お問い合わせ内容</p>
+                                            <textarea
+                                                class="Form-Item-Textarea"></textarea>
+                                        </div>
+                                        <input type="submit"
+                                            class="Form-Btn"
+                                            value="送信する">
+                                    </div>
+                                </div>
+                            </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
+                            <div class="footer02">
+                                <p class="copyright">
+                                    &copy; 2022 Kaito Suehiro
+                                </p>
+                                <p>
+                                    背景画像＜<a
+                                        href="https://jp.freepik.com/free-photo/_1038671.htm#query=%E3%83%AC%E3%83%B3%E3%82%AC&position=3&from_view=search&track=sph">著作者：kues1</a>／出典：Freepik＞
+                                </p>
+                            </div>
+                            <script
+                                src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+                            <script
+                                src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+                            <script>
         $(document).foundation();
     </script>
-</body>
+                        </body>
 
-</html>
+                    </html>
